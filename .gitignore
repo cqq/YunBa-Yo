@@ -1,0 +1,11 @@
+.DS_Store
+/gen
+.log
+/.settings
+/bin
+/gen/*
+/obj
+/gen
+/proguard
+lint.xml
+proguard.cfg

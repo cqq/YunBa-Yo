@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/user_row_swipe_buttons_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button  android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_row_cancel_button" android:background="@color/WISTERIA" android:layout_width="fill_parent" android:layout_height="80dp" android:text="@string/cancel_caps" android:singleLine="true" android:layout_weight="1.0" style="@style/RowStyle" />
+        <Button  android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_row_delete_button" android:background="@color/BELIZE" android:layout_width="fill_parent" android:layout_height="80dp" android:text="@string/delete" android:singleLine="true" android:layout_weight="1.0" style="@style/RowStyle" />
+        <Button  android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/user_row_detail_button" android:background="@color/ALIZARIN" android:layout_width="fill_parent" android:layout_height="80dp" android:text="@string/block" android:singleLine="true" android:layout_weight="1.0" style="@style/RowStyle" />
+    </LinearLayout>
+    <FrameLayout android:id="@+id/rowLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/rowUsername" android:layout_width="fill_parent" android:layout_height="80dp" android:singleLine="true" style="@style/RowStyle" android:background="@color/BELIZE"/>
+        <EditText android:textStyle="bold" android:textColor="@android:color/white" android:textColorHint="@android:color/white" android:ellipsize="end" android:gravity="center" android:layout_height="80dp" android:layout_gravity="center" android:id="@+id/rowPlusText" android:background="@color/ALIZARIN"  android:visibility="gone" android:layout_width="fill_parent" android:hint="@string/plus_text" android:singleLine="true" android:imeOptions="actionGo"  style="@style/RowStyle" />
+    </FrameLayout>
+    <ProgressBar android:id="@+id/rowProgrssBar" android:layout_height="80dp" android:visibility="gone" android:layout_width="fill_parent"  android:background="@color/BELIZE"  android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Small"  />
+</RelativeLayout>

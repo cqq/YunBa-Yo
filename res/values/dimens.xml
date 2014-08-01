@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="app_widget_side_size">70.0dip</dimen>
+    <dimen name="app_widget_side_size_px">90.0px</dimen>
+    <dimen name="app_widget_Letter_size">20.0sp</dimen>
+    <dimen name="app_widget_sent_size">7.0sp</dimen>
+</resources>

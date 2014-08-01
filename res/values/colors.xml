@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TURQUOISE">#ff1abc9c</color>
+    <color name="EMERALD">#ff2ecc71</color>
+    <color name="PETER">#ff3498db</color>
+    <color name="ASPHALT">#ff34495e</color>
+    <color name="GREEN">#ff16a085</color>
+    <color name="SUNFLOWER">#fff1c40f</color>
+    <color name="BELIZE">#ff2980b9</color>
+    <color name="WISTERIA">#ff8e44ad</color>
+    <color name="ALIZARIN">#ffe74c3c</color>
+    <color name="AMETHYST">#ff9b59b6</color>
+    <color name="TURQUOISE_up">@color/TURQUOISE</color>
+    <color name="EMERALD_up">@color/EMERALD</color>
+    <color name="PETER_up">@color/PETER</color>
+    <color name="ASPHALT_up">@color/ASPHALT</color>
+    <color name="GREEN_up">@color/GREEN</color>
+    <color name="SUNFLOWER_up">@color/SUNFLOWER</color>
+    <color name="BELIZE_up">@color/BELIZE</color>
+    <color name="WISTERIA_up">@color/WISTERIA</color>
+    <color name="ALIZARIN_up">@color/ALIZARIN</color>
+    <color name="AMETHYST_up">@color/AMETHYST</color>
+    <color name="TURQUOISE_down">#ff138d75</color>
+    <color name="EMERALD_down">#ff229955</color>
+    <color name="PETER_down">#ff2772a4</color>
+    <color name="ASPHALT_down">#ff273746</color>
+    <color name="GREEN_down">#ff107864</color>
+    <color name="SUNFLOWER_down">#ffb5930b</color>
+    <color name="BELIZE_down">#ff1f608b</color>
+    <color name="WISTERIA_down">#ff6a3382</color>
+    <color name="ALIZARIN_down">#ffad392d</color>
+    <color name="AMETHYST_down">#ff744388</color>
+</resources>
