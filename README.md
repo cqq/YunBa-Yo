@@ -15,7 +15,7 @@ Reference: yunba.io
 
 ![Alt img](imgs/details.png)
 
-![Alt img](imgs/chat.png)
+![Alt img](imgs/chat2.png)
 
 
 
