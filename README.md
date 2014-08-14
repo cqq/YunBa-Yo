@@ -5,7 +5,7 @@ Reference: yunba.io
 
 效果图：
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/set_username.png)
+![Alt img](imgs/set_username.png)
 
 ![Alt img](/cqq/YunBa-Yo/raw/master/imgs/add_user.png)
 
