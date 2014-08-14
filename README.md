@@ -7,15 +7,15 @@ Reference: yunba.io
 
 ![Alt img](imgs/set_username.png)
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/add_user.png)
+![Alt img](imgs/add_user.png)
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/friend_list.png)
+![Alt img](imgs/friend_list.png)
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/send_yo.png)
+![Alt img](imgs/send_yo.png)
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/details.png)
+![Alt img](imgs/details.png)
 
-![Alt img](/cqq/YunBa-Yo/raw/master/imgs/chat.png)
+![Alt img](imgs/chat.png)
 
 
 
