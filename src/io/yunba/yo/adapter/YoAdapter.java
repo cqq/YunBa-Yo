@@ -34,7 +34,7 @@ public class YoAdapter extends BaseAdapter {
 	public static ArrayList<ItemBean> users;
 	
 
-	private static Context mContext;
+	static Context mContext;
 
 	public YoAdapter(ArrayList<ItemBean> users, Context context) {
 		this.users = users;
@@ -88,7 +88,7 @@ public class YoAdapter extends BaseAdapter {
 					if (actionId == EditorInfo.IME_ACTION_GO) {
 						String user = v.getText().toString().trim();
 						if (!YoUtil.isEmpty(user)) {
-							addUser(user);
+							addUser(mContext, user);
 						}
 						YoAdapter.this.notifyDataSetChanged();
 						return false;
@@ -200,7 +200,10 @@ public class YoAdapter extends BaseAdapter {
 	}
 	
 	
-	public static boolean hasUser(String name) {
+	public static boolean hasUser(Context context, String name) {
+		if (null == users) {
+			intUsers(context);
+		}
 		for (int i = 0; i < users.size(); i++) {
 			String oldUser = users.get(i).value;
 			if(!YoUtil.isEmpty(oldUser) && oldUser.equals(name))
@@ -209,8 +212,8 @@ public class YoAdapter extends BaseAdapter {
 		return false;
 	}
 	
-	public static void addUser(String name) {
-		if(!hasUser(name)) {
+	public static void addUser(Context context, String name) {
+		if(!hasUser(context, name)) {
 			if (!YoUtil.isEmpty(name)) {
 				users.add(new ItemBean(name));
 				AddUserToShareprefs(users);
@@ -219,6 +222,20 @@ public class YoAdapter extends BaseAdapter {
 			
 		}
 	}
+	
+	private static void intUsers(Context context) {
+		Set<String> sets = SharePrefsHelper.getSet(context, YunBaManager.HISTORY_TOPICS, null);
+		 ArrayList<ItemBean> listItems = new ArrayList<ItemBean>();
+		if (sets != null && listItems.size() == 0) {
+			for (String string : sets) {
+				if(!YoUtil.isEmpty(string) && !string.contains(" sent "))
+					listItems.add(new ItemBean(string));
+			}
+			
+		}
+		users = listItems;
+	}
+
 	
 	
 

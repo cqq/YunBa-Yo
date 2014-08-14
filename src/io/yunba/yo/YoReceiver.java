@@ -25,7 +25,7 @@ public class YoReceiver extends BroadcastReceiver {
 				String from_user = js.optString("user_name");
 
 				if (!YoUtil.isEmpty(from_user) && !YoUtil.isEmpty(message)) {
-					YoAdapter.addUser(from_user);
+					YoAdapter.addUser(context, from_user);
 					if (message.equals("yo")) {
 						YoUtil.showNotifation(context, "From " + from_user,
 								message, null);

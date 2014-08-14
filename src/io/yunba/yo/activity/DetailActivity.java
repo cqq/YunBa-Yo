@@ -86,7 +86,6 @@ public class DetailActivity extends Activity  implements android.view.View.OnCli
 					
 					@Override
 					public void onFailure(IMqttToken arg0, Throwable arg1) {
-						// TODO Auto-generated method stub
 						YoUtil.showToast("Send msg failed", getApplicationContext());	
 						setCostomMsg("Send msg fialed to - " + userNameTxt.getText().toString().trim());
 					}

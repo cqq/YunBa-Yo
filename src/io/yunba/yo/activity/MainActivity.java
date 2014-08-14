@@ -70,7 +70,8 @@ public class MainActivity extends Activity implements android.widget.AdapterView
 		Set<String> sets = SharePrefsHelper.getSet(getApplicationContext(), YunBaManager.HISTORY_TOPICS, null);
 		if (sets != null && listItems.size() == 0) {
 			for (String string : sets) {
-				listItems.add(new ItemBean(string));
+				if(!YoUtil.isEmpty(string) && !string.contains(" sent "))
+					listItems.add(new ItemBean(string));
 			}
 			
 		}
@@ -101,7 +102,6 @@ public class MainActivity extends Activity implements android.widget.AdapterView
 		
 		if(swipeDetector.swipeDetected()) {
             if(swipeDetector.getAction() == Action.RL ) {
-            	  System.err.println("RK");
             	  adapter.users.get(index).show = 1;
             	  adapter.notifyDataSetChanged();
             } else {
@@ -132,11 +132,12 @@ public class MainActivity extends Activity implements android.widget.AdapterView
 						public void run() {
 							adapter.users.get(id).value = it.value + " sent succeed!";
 							adapter.notifyDataSetChanged();	
+							adapter.users.get(id).value = it.value;
 						}
 					});
 					
 					try {
-						Thread.sleep(2000);
+						Thread.sleep(1000);
 					} catch (InterruptedException e) {
 					}
 					
@@ -161,12 +162,13 @@ public class MainActivity extends Activity implements android.widget.AdapterView
 						@Override
 						public void run() {					
 							adapter.users.get(id).value = it.value + " sent faild!";
-							adapter.notifyDataSetChanged();							
+							adapter.notifyDataSetChanged();		
+							adapter.users.get(id).value = old;
 						}
 					});
 					
 					try {
-						Thread.sleep(2000);
+						Thread.sleep(1000);
 					} catch (InterruptedException e) {
 					
 					}
